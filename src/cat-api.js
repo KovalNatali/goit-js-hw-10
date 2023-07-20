@@ -1,6 +1,6 @@
 
 import axios from 'axios';
-// axios.defaults.headers.common["x-api-key"] = 'live_jrKB6rlgTq7akJYruOO77QVXT4VbLNgI2twIseaYtTPyi1ThxUwBTWno1quNpVIs';
+axios.defaults.headers.common["x-api-key"] = 'live_jrKB6rlgTq7akJYruOO77QVXT4VbLNgI2twIseaYtTPyi1ThxUwBTWno1quNpVIs';
 axios.defaults.baseURL = 'https://api.thecatapi.com/v1';
 
 export function fetchBreeds() {
@@ -9,7 +9,7 @@ export function fetchBreeds() {
   });
 }
 export function fetchCatByBreed(breedId) {
-  return axios.get(`/images/search?breed_ids=${breedId}&api_key=live_jrKB6rlgTq7akJYruOO77QVXT4VbLNgI2twIseaYtTPyi1ThxUwBTWno1quNpVIs
+  return axios.get(`/images/search?breed_ids=${breedId}
   `).then(({ data }) => {
     return data;
   });
