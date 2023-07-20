@@ -13,6 +13,7 @@ const refs = {
         errorEl: document.querySelector('.error')
     }
 
+refs.loaderEl.hidden = true;
 
 fetchBreeds().then(data =>  createMarkup(data)).catch(err => console.log(err))
  function createMarkup(data) {
