@@ -1,11 +1,8 @@
-import axios from "axios";
 import { fetchBreeds, fetchCatByBreed } from "./cat-api";
 import SlimSelect from 'slim-select';
 import Notiflix from 'notiflix';
 import 'slim-select/dist/slimselect.css';
 
-axios.defaults.headers.common["x-api-key"] = "live_G8r6oLtNkRoSlieCAZMonLwOGX3OhcR5Kj1FOY8VQoFwdXlg98W65xsQgjkb8wW4";
-axios.defaults.baseURL = 'https://api.thecatapi.com/v1';
 const refs = {
         selectEl: document.querySelector('.breed-select'),
         loaderEl: document.querySelector('.loader'),
